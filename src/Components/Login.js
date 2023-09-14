@@ -7,7 +7,7 @@ export const Login = () => {
     const Auth = useAuth()
     const navigate = useNavigate()
     const location = useLocation()
-    const redirectPath = location.stae?.path|| '/'
+    //const redirectPath = location.stae?.path|| '/'
     const handleLogin = ()=>{
         Auth.login(user)
         navigate('/')
