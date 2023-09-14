@@ -1,12 +1,12 @@
 import {useState} from 'react'
 import {useAuth} from './Auth'
-import { useNavigate,useLocation  } from 'react-router-dom'
+import { useNavigate  } from 'react-router-dom'
 
 export const Login = () => {
     const[user,setUser] = useState('')
     const Auth = useAuth()
     const navigate = useNavigate()
-    const location = useLocation()
+    
     //const redirectPath = location.stae?.path|| '/'
     const handleLogin = ()=>{
         Auth.login(user)
