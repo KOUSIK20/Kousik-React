@@ -15,7 +15,11 @@ import { Users } from './Components/Users';
 import { Userdetails } from './Components/Userdetails';
 import { Admin } from './Components/Admin';
 import { Profile } from './Components/Profile';
-
+import './App.css'
+import {CakeView} from './features/cakes/CakeView'
+import {IcecreamView} from './features/iceCream/IcecreamView'
+import {UserView} from './features/user/UserView'
+import { Shop } from './features/Shop';
 const LazyAbout = React.lazy(()=>import('./Components/About'))
 function App() {
   return (
@@ -34,9 +38,11 @@ function App() {
       <Route path='admin'element={<Admin/>}/>
       
       </Route>
-
+       <Route path='shop'element={<Shop/>}/>
      
-      
+        <Route path='cake' element={<CakeView/>}/>
+        <Route path='Icecream' element={<IcecreamView/>}/>
+        <Route path='userslice'element={<UserView/>}/>
       
       <Route path='products' element={<Products/>}>
         <Route index element={<Featuredproducts/>}/>

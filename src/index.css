@@ -12,12 +12,29 @@ code {
     monospace;
 }
 nav{
-  background-color: aliceblue;
+  background-color: rgb(198, 160, 138);
   padding: 16px 32px;
+  
 }
 nav a{
-  margin-right:  16px; ;
+  margin-right:  16px; 
+  color:black ;
+  
 }
 nav a.active{
   font-weight: bold;
+  color: #f2e9e9;
+}
+a{
+  padding: 16px;
+  margin-top: 10px;
+}
+
+input{
+  margin-left: 14px;
+    margin-top: 18px;
+}
+.feature{
+  margin-left: 18px;
+  margin-top: 10px;
 }
