@@ -8,11 +8,14 @@ export const IcecreamView = () => {
   const [value,setValue] = React.useState(1)
   return (
     <div>
+      <form>
         <h2>Number of icecreams -{numOfIcecreams} </h2>
-        <button className='icecream button' onClick={()=>dispatch(ordered())}>Order icecream</button>
+        <button className='icecream button' onClick={(e)=>{e.preventDefault();dispatch(ordered())}}>Order icecream</button>
         <input type ='number' value={value} onChange={(e)=>{setValue(parseInt(e.target.value))}}>
         </input>
-        <button className='icecream button' onClick ={()=>dispatch(restocked(value))}>Restock icecreams</button>
+        <button className='icecream button' onClick ={(e)=>{e.preventDefault();dispatch(restocked(value))}}>Restock icecreams</button>
+        </form>
+        
     </div>
   )
 }

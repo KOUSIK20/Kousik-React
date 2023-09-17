@@ -6,7 +6,7 @@ export const Profile = () => {
     const navigate = useNavigate()
     const handleLogout= ()=>{
         Auth.logout()
-        navigate('/')
+        navigate('/login')
     }
   return (
     <div>Welcome  {Auth.user}
