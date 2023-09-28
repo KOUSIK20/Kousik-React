@@ -4,7 +4,7 @@ import {useAuth} from './Auth'
 export const RequiredAuth = ({children}) => {
     const location =useLocation()
     const Auth = useAuth()
-    if(!Auth.user){
+    if(!Auth?.user){
         return <Navigate to='/login' state={{path:location.pathname}}/>
     }
   return children

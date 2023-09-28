@@ -1,6 +1,6 @@
 import React from 'react';
 import {AuthProvider } from './Components/Auth'
-import {Routes,Route} from 'react-router-dom'
+import {Routes,Route, BrowserRouter} from 'react-router-dom'
 import { Home } from './Components/Home';
 import { Login } from './Components/Login';
 import { RequiredAuth } from './Components/RequiredAuth';
@@ -24,7 +24,7 @@ import { TodoForm } from './Components/TodoForm';
 const LazyAbout = React.lazy(()=>import('./Components/About'))
 function App() {
   return (
-    
+    <BrowserRouter>
     <AuthProvider>
     <Navbar/>
     <Routes>
@@ -53,7 +53,7 @@ function App() {
     </Routes>
     </AuthProvider>
     
-    
+    </BrowserRouter>
    
   );
 }
