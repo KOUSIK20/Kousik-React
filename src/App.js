@@ -17,6 +17,10 @@ import {CakeView} from './features/cakes/CakeView'
 import {IcecreamView} from './features/iceCream/IcecreamView'
 import {UserView} from './features/user/UserView'
 import { Shop } from './features/Shop';
+import { Test } from './Components/Test';
+import { TodoWrapper } from './Components/TodoWrapper';
+import { Todo } from './Components/Todo';
+import { TodoForm } from './Components/TodoForm';
 const LazyAbout = React.lazy(()=>import('./Components/About'))
 function App() {
   return (
@@ -40,8 +44,11 @@ function App() {
         <Route path='cake' element={<CakeView/>}/>
         <Route path='Icecream' element={<IcecreamView/>}/>
         <Route path='userslice'element={<UserView/>}/>
+        
       
-      
+      <Route path='Test' element={<Test/>}/>
+      <Route path='wrap' element={<TodoWrapper/>}/>
+      <Route path='todoform' element={<TodoForm/>}/>
       
     </Routes>
     </AuthProvider>

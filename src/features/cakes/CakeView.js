@@ -7,7 +7,7 @@ export const CakeView = () => {
   const dispatch = useDispatch()
   return (
     <div>
-        <h2>Number of cakes -{numOfCakes} </h2>
+        <h2>Number of Cakes -{numOfCakes} </h2>
         <button className='cakebutton'onClick={()=>dispatch(ordered())}>Order cake</button>
         <button className='cakebutton' onClick={()=>dispatch(restocked(5))}>Restock cakes</button>
     </div>

@@ -85,3 +85,86 @@ h1{
 .mail{
   display: inline-flex;
 }
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.TodoBody {
+  background:#F1F4FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 100px;
+}
+h1.heading{
+  color: white;
+}
+
+
+.TodoWrapper {
+  background: #89ABE3FF;
+  
+  padding: 2rem;
+  border-radius: 5px;
+  height: auto;
+  min-height: 500px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+  background:white;
+  text-align: center;
+  
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  color: black;
+  
+}
+
+.todo-input::placeholder {
+  color: black;
+}
+
+.todo-btn {
+  background: #89ABE3FF;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ background:#F1F4FFFF;
+  color: #050404;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+ 
