@@ -17,10 +17,11 @@ import {CakeView} from './features/cakes/CakeView'
 import {IcecreamView} from './features/iceCream/IcecreamView'
 import {UserView} from './features/user/UserView'
 import { Shop } from './features/Shop';
-
+import { Game } from './Components/Game';
 import { TodoWrapper } from './Components/TodoWrapper';
 //import { Todo } from './Components/Todo';
 import { TodoForm } from './Components/TodoForm';
+import { WeatherApp } from './Components/WeatherApp';
 const LazyAbout = React.lazy(()=>import('./Components/About'))
 function App() {
   return (
@@ -49,7 +50,8 @@ function App() {
       
       <Route path='wrap' element={<TodoWrapper/>}/>
       <Route path='todoform' element={<TodoForm/>}/>
-      
+      <Route path='game' element={<Game/>} />
+      <Route path='weather' element={<WeatherApp/>}/>
     </Routes>
     </AuthProvider>
     
