@@ -22,6 +22,7 @@ import { TodoWrapper } from './Components/TodoWrapper';
 //import { Todo } from './Components/Todo';
 import { TodoForm } from './Components/TodoForm';
 import { WeatherApp } from './Components/WeatherApp';
+import { BMI } from './Components/BMI';
 const LazyAbout = React.lazy(()=>import('./Components/About'))
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
       <Route path='todoform' element={<TodoForm/>}/>
       <Route path='game' element={<Game/>} />
       <Route path='weather' element={<WeatherApp/>}/>
+      <Route path='bmi' element={<BMI />} />
     </Routes>
     </AuthProvider>
     
